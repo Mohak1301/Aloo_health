@@ -1,0 +1,151 @@
+/* In your CSS file */
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F1F1F1;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+}
+
+.left {
+  width: 60vw;
+  background-color: #FFFFFF;
+  margin: 2vh 1vw 5vh 7vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.left-categories button {
+  padding: 8px 20px;
+  margin: 5px;
+  background: none;
+  border: 1px solid slategray;
+  border-radius: 20px;
+  color: #235796;
+  font-weight: 600;
+}
+
+.left-categories button.active {
+  background-color: #235796;
+  color: #FFFFFF;
+}
+
+.left-categories button:hover {
+  cursor: pointer;
+  background-color: rgb(206, 212, 217);
+  color: #132e4e;
+  transition: 0.3s ease;
+}
+
+.food-cards {
+  /* height: 75vh; */
+}
+
+.meal-item {
+  display: flex;
+  align-items: center;
+  color: #132e4e;
+  margin-bottom: 20px;
+}
+
+.meal-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.meal-image img {
+  width: 100%;
+  max-width: 250px;
+}
+
+.meal-data {
+  margin-left: 80px;
+  width: 100%;
+}
+
+.meal-data p {
+  margin: 0;
+}
+
+.meal-data button {
+  background: none;
+  border: 1px solid slategray;
+  padding: 5px 8px;
+  margin: 5px;
+  color: #0f2b4e;
+  font-size: 16px;
+}
+
+.meal-data button:hover {
+  cursor: pointer;
+  background-color: #d6e1ef;
+  transition: 0.3s ease;
+}
+
+.meal-price-select {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 0;
+}
+
+.left-pagination {
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.left-pagination button {
+  background: none;
+  border: 1px solid slategray;
+  padding: 5px 8px;
+  margin: 5px;
+  color: #235796;
+}
+
+.right {
+  width: 40vw;
+  margin: 2vh 1vw 5vh 2vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+hr {
+  margin: 20px 20px 10px 0;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left, .right {
+    width: 90vw;
+    margin: 2vh 0;
+  }
+
+  .meal-item {
+    flex-direction: column;
+  }
+
+  .meal-data {
+    margin-left: 0;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .meal-price-select {
+    flex-direction: column;
+  }
+}
