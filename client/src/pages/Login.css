@@ -1,0 +1,236 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+about-heading,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+.Login-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 10vw;
+    /* Adjust the padding value as per your preference */
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+}
+
+.Login-container:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("LoginImage.png") no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.login-box {
+    width: 95%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+        background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.login-left {
+    background-image: url("LoginImage.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.login-right {
+    padding: 25px 40px;
+}
+.login-right h1{
+color: #FFD233;
+    text-shadow: 0px -4px 4px rgba(255, 255, 255, 0.60);
+    font-family: 'Hurricane', cursive;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.Login-inputbox {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+            
+}
+.Login-inputbox input{
+    border-radius: 10px;
+        background: #393939;
+        color: white;
+        box-shadow: 0px -4px 4px 0px #FFD233;
+        display: flex;
+        width: 250px;
+            max-width: 400px;
+            height: 40px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+}
+
+.login-button{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        
+}
+.login-button button{
+    border-radius: 10px;
+        color: #000;
+        width: 250px;
+        max-width: 400px;
+        font-family: Sen;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: rgba(255, 255, 51, 0.75);
+        box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset, -4px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        background: #FFD233;
+        display: flex;
+        max-width: 400px;
+        height: 46.45px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+}
+.signlink{
+margin-top: 30px;
+}
+.signlink a{
+    text-decoration: none;
+}
+
+.no-sign-link {
+    color: #FF3;
+    
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+.new-register{
+    margin-top: 90px;
+}
+.new-register span{
+color: #FFF;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.new-register a{
+    color: #FF3;
+    display: inline-flex;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+}

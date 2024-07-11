@@ -73,9 +73,10 @@ const Homepage = () => {
   };
 
   return (
+    <div className="body">
     <div className="container">
       <div className="content">
-        <div className="left">
+        <div className="left-main">
           <div className="left-categories">
             {[
               "Pork",
@@ -127,7 +128,7 @@ const Homepage = () => {
             <button onClick={() => setPage(3)}>3</button>
           </div>
         </div>
-        <div className="right">
+        <div className="right-main">
           <h2>Selected Meals</h2>
           {selectedMeal.length === 0 ? (
             <p>No meals selected.</p>
@@ -149,6 +150,7 @@ const Homepage = () => {
           )}
         </div>
       </div>
+    </div>
     </div>
   );
 };

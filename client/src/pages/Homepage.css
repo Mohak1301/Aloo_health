@@ -1,5 +1,5 @@
 /* In your CSS file */
-body {
+.body {
   width: 100vw;
   height: 100vh;
   background-color: #F1F1F1;
@@ -12,7 +12,7 @@ body {
   display: flex;
 }
 
-.left {
+.left-main {
   width: 60vw;
   background-color: #FFFFFF;
   margin: 2vh 1vw 5vh 7vw;
@@ -112,7 +112,7 @@ body {
   color: #235796;
 }
 
-.right {
+.right-main {
   width: 40vw;
   margin: 2vh 1vw 5vh 2vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
